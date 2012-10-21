@@ -49,7 +49,7 @@
               <li><a href="#install">Installation</a></li>
               <li><a href="#contact">Contact</a></li>
               <li class="divider-vertical"></li>
-              <li><a href="http://github.com/swcarpentry/2012-10-caltech">GitHub Repo</a></li>
+              <li><a href="http://github.com/swcarpentry/2012-10-gmu">GitHub Repo</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -62,15 +62,15 @@
           <a href="http://software-carpentry.org">
             <img src="logos/software-carpentry-with-hammer.svg" style="float: right; height: 60px;">
           </a>
-          <h1>Caltech</h1>
+          <h1>George Mason University</h1>
         </div>
         <br>
         <div class="row-fluid">
           <div class="span6">
-            <p>Hill Annex, Room 383</p>
+            <p>Research Hall, Room 162</p>
           </div>
           <div class="span6" style="text-align: right;">
-            <p>October 23 - 24, 2012<br>
+            <p>October 25 - 26, 2012<br>
                9:00 AM - 4:30 PM</p>
           </div>
         </div>
@@ -88,8 +88,12 @@
                 <td style="text-align: right;">Setup Help</td>
               </tr>
               <tr>
-                <td>9:00 - 12:00</td>
-                <td style="text-align: right;">Python</td>
+                <td>9:00 - 11:00</td>
+                <td style="text-align: right;">UNIX Shell</td>
+              </tr>
+              <tr>
+                <td>11:00 - 12:00</td>
+                <td style="text-align: right;">Intro to Python I</td>
               </tr>
               <tr>
                 <td>12:00 - 1:00</td>
@@ -97,7 +101,7 @@
               </tr>
               <tr>
                 <td>1:00 - 4:30</td>
-                <td style="text-align: right;">Scientific Python and AstroPy</td>
+                <td style="text-align: right;">Intro to Python II</td>
               </tr>
             </tbody>
           </table>
@@ -106,19 +110,19 @@
             <tbody>
               <tr>
                 <td>9:00 - 12:00</td>
-                <td style="text-align: right;">Version Control with Git</td>
+                <td style="text-align: right;">Number Crunching with Numpy</td>
               </tr>
               <tr>
                 <td>12:00 - 1:00</td>
                 <td style="text-align: right;">Lunch</td>
               </tr>
               <tr>
-                <td>1:00 - 3:30</td>
-                <td style="text-align: right;">Software Engineering with Python</td>
+                <td>1:00 - 3:00</td>
+                <td style="text-align: right;">Version control with Git</td>
               </tr>
               <tr>
-                <td>3:30 - 4:30</td>
-                <td style="text-align: right;">Data Pipelines with Make</td>
+                <td>3:00 - 4:30</td>
+                <td style="text-align: right;">Testing and Debugging</td>
               </tr>
             </tbody>
           </table>
@@ -127,26 +131,23 @@
       <hr>
       <div>
         <h1 id="install">Installation</h1>
-        <h3>Virtual Machine</h3>
-        <p>To give everyone a consistent, pre-configured environment we
-           provide a Linux virtual machine. Install
-           <a href="https://www.virtualbox.org/">VirtualBox</a> and download
-           <a href="https://s3.amazonaws.com/SWC_JHU2012/swc_jhu2012_r03.ova">
-           this virtual machine image</a>. Load the VM into VirtualBox by
-           doing Import Appliance and loading the .ova file.</p>
 
-        <h3>Other Options</h3>
+        <h3>Required Software</h3>
         <p>To complete the entire workshop you need several things:
            a Bash shell, git, a code editor (though any plain text editor
            will work in a pinch), and a scientific Python installation
            that includes the
-           <a href="http://ipython.org/ipython-doc/dev/interactive/htmlnotebook.html">
-            IPython Notebook</a>,
+           <a href="http://ipython.org/">IPython</a>,
             <a href="http://numpy.scipy.org/">NumPy</a>,
             and <a href="http://matplotlib.org/">matplotlib</a>.</p>
-        <p>Even if you plan to install things yourself please download
-           VirtualBox and the virtual machine as a backup. It can be
-           extremely difficult to get everything set up correctly.</p>
+
+        <p>An easy way to install these requirements in a fairly consistent
+           manner across OSX, Windows, and Linux is to install the
+           Enthought Python Distribution (EPD).  You can download and
+           install the free version here:
+           <a href="http://www.enthought.com/products/epd_free.php">
+             http://www.enthought.com/products/epd_free.php
+           </a></p>
 
         <div class="row-fluid">
           <div class="span6">
@@ -210,15 +211,38 @@
                 installing scientific Python</a>.</p>
           </div>
         </div> <!-- row2 -->
+
+        <h3>Virtual Machine</h3>
+        <p>In case anyone has any insurmountable installation issues, we
+           will provide a Linux virtual machine with all the required
+           software pre-installed (this was prepared for a workshop at
+           JHU earlier this year, hence the filename).  If you want to
+           try running the VM first install
+           <a href="https://www.virtualbox.org/">VirtualBox</a> and download
+           <a href="https://s3.amazonaws.com/SWC_JHU2012/swc_jhu2012_r03.ova">
+           this virtual machine image</a>. Load the VM into VirtualBox by
+           doing Import Appliance and loading the .ova file.  Then try
+           logging in with:
+           <dl>
+             <dt>username:</dt><dd>swc</dd>
+             <dt>password:</dt><dd>jhu2012</dd>
+           </dl>
+           We strongly encourage you to first try getting all the software
+           installed and working on your normal work machine so that you
+           may continue working with these tools after the workshop in your
+           normal work environment.
+           </p>
       </div> <!-- installation -->
       <hr>
       <div id="contact">
         <h1>Contact</h1>
         <p>This workshop will be presented by
-           <a href="http://penandpants.com">Matt Davis</a>.
+        <a href="mailto:erik.m.bray@gmail.com">Erik Bray</a> and
+        <a href="mailto:bostroem@stsci.edu">Azalee Bostroem</a>.
            For more information contact
            <a href="mailto:info@software-carpentry.org">
-            info@software-carpentry.org</a>.
+             info@software-carpentry.org</a> or the project lead
+           <a href="mailto:gvwilson@third-bit.com">Greg Wilson</a>.
       </div> <!-- contact -->
     </div> <!-- /container -->
 
